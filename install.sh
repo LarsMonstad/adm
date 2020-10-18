@@ -1,19 +1,19 @@
 #https://github.com/lrs11/adm
 #script for installing and implementing the deep learning model and midifiles for bachprop
 apt update
-apt install python3-pip -y
+apt install -y python3-pip 
 alias python==python3;alias pip==pip3
 python3 -m pip install --upgrade pip
 pip3 install tensorflow==2.2.0
 pip install mido  
 pip install keras 
-apt install git  -y
+apt install -y git  
 pip install git+https://github.com/louisabraham/python3-midi #the only midi package that works with bachprop
-apt install unrar -y
-apt install unzip -y
+apt install -y unrar 
+apt install -y unzip 
 pip install h5py
 pip install tqdm
-apt install wget -y
+apt install -y wget
 pip list
 sleep 5
 #getting files_____________________________
@@ -31,7 +31,7 @@ dpkg -i libcudnn7-dev_7.6.4.38-1+cuda10.1_amd64.deb
 rm libcudnn7_7.6.4.38-1+cuda10.1_amd64.deb
 rm libcudnn7-dev_7.6.4.38-1+cuda10.1_amd64.deb
 #starting the training___________ 
-apt install sed -y
+apt install -y sed
 sed -i 'os.environ["CUDA_VISIBLE_DEVICES"] = "-1"' BachProp.py
 head BachProp.py
 sleep 10
@@ -39,9 +39,9 @@ python3 BachProp.py B7 train
 
 #uploadning files to ftp ____________________________________________
 cd ../save
-apt install rar -y
+apt install -y rar
 rar B7.rar B7 
-apt install ftp-upload -y 
+apt install -y ftp-upload
 ftp-upload -h linweb07.sbv.webhuset.no -u u1234 --password p1234 -d batch7 B7.rar
 #to run the script write: git clone https://github.com/lrs11/adm
 
