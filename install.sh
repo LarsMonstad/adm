@@ -4,9 +4,9 @@ alias python==python3;alias pip==pip3
 python3 -m pip install --upgrade pip
 pip3 install tensorflow==2.2.0
 pip install mido
-pip install keras 
-apt install -y git  
-pip install git+https://github.com/louisabraham/python3-midi #the only midi package that works with bachprop
+pip install keras
+apt install -y git
+pip install git+https://github.com/louisabraham/python3-midi
 apt install -y unrar 
 apt install -y unzip 
 pip install h5py
