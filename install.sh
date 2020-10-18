@@ -20,7 +20,7 @@ sleep 5
 git clone https://github.com/FlorianColombo/BachProp
 cd BachProp-master/data/
 mkdir -p B7/midi 
-wget "http://larsvegas1.com.datasenter.no/Batch7.rar" -O Batch7.rar
+wget "http://larsvegas1.com.datasenter.no/Batch/Batch7.rar" -O Batch7.rar
 unrar e Batch7.rar B7/midi/
 cd ../../src/
 #need to install libcudnn otherwise the script wont run... ______________________________________
