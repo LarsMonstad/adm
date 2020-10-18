@@ -1,3 +1,4 @@
+#!/bin/bash
 apt update
 apt install -y python3-pip 
 alias python==python3;alias pip==pip3
