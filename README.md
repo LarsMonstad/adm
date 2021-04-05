@@ -1,3 +1,3 @@
 # adm
-Script to implement midi into bachprop,
-used vast.ai to train and currently only works on cuda 10.1
+Script to implement midi into bachprop.
+I used vast.ai for training and it currently only works on cuda 10.1
