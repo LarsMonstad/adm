@@ -52,5 +52,5 @@ cd ../save
 #create a rar file
 rar a ${expnr}.rar B7
 # upload the file into ftp 
-ncftpput -u $ftpu -p $ftppw $ftpurl $ftpfolder ${batchnr}.rar
+ncftpput -u $ftpu -p $ftppw $ftpurl $ftpfolder ${expnr}.rar
 sleep 20
